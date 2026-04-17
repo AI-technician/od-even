@@ -3,8 +3,8 @@ import { AlertCircle, CheckCircle2, Search, FileSpreadsheet, Info, X, AlertTrian
 import * as XLSX from 'xlsx';
 
 export default function App() {
-  const [sheetData, setSheetData] = useState<string[]>(["40우1234", "50우2341", "65우2473", "308누3234", "35가0317"]);
-  const [excludedVehicles, setExcludedVehicles] = useState<string[]>(["40우1234", "35가0317"]);
+  const [sheetData, setSheetData] = useState<string[]>(["40가1234", "50우2341", "65우2473", "308누3234", "35가0317"]);
+  const [excludedVehicles, setExcludedVehicles] = useState<string[]>(["40가1234", "35가0317"]);
   const [isLoading, setIsLoading] = useState(false);
   const [loadError, setLoadError] = useState('');
   const [loadSuccess, setLoadSuccess] = useState(true);
