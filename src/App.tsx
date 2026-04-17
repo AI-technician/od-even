@@ -206,7 +206,7 @@ export default function App() {
         isOpen: true,
         type: 'compliant', // Or we could create a new 'excluded' type, but 'compliant' shows a green check
         plate: plateNumber,
-        message: `[${plateNumber}] 2부제 제외차량으로 정상운행가능합니다.`
+        message: `[${plateNumber}] 2부제 제외 차량으로 운행 가능합니다.`
       });
       return;
     }
@@ -257,7 +257,7 @@ export default function App() {
         isOpen: true,
         type: 'compliant',
         plate: plateNumber,
-        message: `[${plateNumber}] ${employeeStatus}\n정상 운행 가능한 차량입니다.`
+        message: `[${plateNumber}] ${employeeStatus}\n2부제 제외 차량으로 운행 가능합니다.`
       });
     }
   };
