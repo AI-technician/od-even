@@ -233,7 +233,7 @@ export default function App() {
     const isEvenDay = selectedDay % 2 === 0;
     const isEvenPlate = lastDigit % 2 === 0;
 
-    const employeeStatus = isRegistered ? '직원차량입니다.' : '직원차량이 아닙니다.';
+    const employeeStatus = isRegistered ? '정상 차량입니다.' : '외부 차량입니다.';
 
     if (isEvenDay !== isEvenPlate) {
       // Violation
@@ -507,7 +507,7 @@ export default function App() {
                       <div>
                         <p className="text-sm font-bold text-gray-900">{record.plate}</p>
                         <p className="text-xs text-gray-500 mt-0.5">
-                          {record.checkDate} 단속 | {record.isEmployee ? '직원차량' : '외부차량'}
+                          {record.checkDate} 단속 | {record.isEmployee ? '정상 등록' : '외부차량'}
                         </p>
                       </div>
                     </div>
